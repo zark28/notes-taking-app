@@ -14,7 +14,7 @@ const Note = ({id,content,title,date}) => {
   return (
     <div className='w-full h-full transform hover:scale-[101%] duration-75  note bg-notesColor rounded-[10px] p-4 min-h-[170px] flex flex-col items-center justify-between'>
        <h2     
-         className="w-full font-semibold border-b-2 focus:outline-none 
+         className="w-full font-semibold border-b-2  focus:outline-none 
          " > 
          {title.toLocaleUpperCase()} 
          </h2>

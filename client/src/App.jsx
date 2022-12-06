@@ -11,8 +11,10 @@ const App = () => {
  const [noteData,setNoteData]=useState() 
  const [theme,setTheme]=useState()
  useEffect(()=>{
+ 
   setTheme(localStorage.getItem("theme"))
- })
+ 
+ },[])
  
  const handleThemeToggle=()=>{
   if(!theme){

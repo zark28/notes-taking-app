@@ -33,7 +33,7 @@ const handleAddNote=()=>{
          type="text" 
          name="title" 
          id="title" 
-         placeholder='Add title here ..' 
+         placeholder='add title here....' 
          value={noteData.title?.toLocaleUpperCase()} 
          onChange={handleChange}
          className="w-full font-semibold border-b-2 focus:outline-none placeholder:text-buttonColor
