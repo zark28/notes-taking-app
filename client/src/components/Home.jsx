@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 import Header from './Header'
 import useRequestResource from '../hooks/useRequestResources'
 
-const Home = () => {
+const Home = ({themeToggle}) => {
 
   
   const {getResources,resources} =useRequestResource({})
@@ -15,12 +15,12 @@ const Home = () => {
 
   const [searchText,setSearchText]=useState('')
 
-console.log(resources);
+// console.log(resources);
 
   return (
-    <div className='w-full flex flex-col  m-auto px-[15px] py-10 relative '>
-        <div className='w-full flex flex-col sticky top-0 bg-[white] z-50 '>
-        <Header btnText='Toggle Mode'/>
+    <div className='dark:bg-bgColor-dark w-full h-[100vh] flex flex-col  px-[15px] py-10  relative '>
+        <div className='w-full flex flex-col sticky top-0 bg-[white] dark:bg-bgColor-dark z-50 '>
+        <Header onclick={themeToggle} btnText='Toggle Mode'/>
           <SearchBar searchNote={setSearchText}/>
         </div>
             <NotesList 

@@ -36,7 +36,7 @@ useEffect(()=>{
   
 },[])
 
-console.log(newNoteData);
+// console.log(newNoteData);
 // console.log(resources);
 
 const handleEditNote=()=>{
@@ -45,7 +45,7 @@ const handleEditNote=()=>{
 }
 const handleSaveNote=()=>{
   updateResource()
-  console.log(newNoteData);
+  // console.log(newNoteData);
 }
 
 //delete note
@@ -55,7 +55,7 @@ navigate('/')
  }
 
   return (
-    <div>
+    <div className='px-[15px] py-10 h-[100vh] dark:bg-bgColor-dark'>
      <Header onclick={()=>navigate('/')} btnText='Back to Notes'/>
       <div className="add-note bg-newNotesColor gap-4 rounded-[10px] p-4 min-h-[170px] flex flex-col items-center justify-between" >
     <input  

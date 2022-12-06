@@ -48,7 +48,7 @@ const useRequestResource = ({ endpoint='notes', body, noteId }) => {
     axios
       .patch(`${URI}/${endpoint}/${noteId}`, { ...body })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         res.statusText=="OK" &&
         alert("Note Updated")
        
